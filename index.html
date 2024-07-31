@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img src="image.jpg" alt="Your Name">
+            <h1>Benedict Torres Pascua</h1>
+            <div class="text-container">
+                <h3 id="changing-text">UI/UX Design</h3>
+            </div>
+            <hr>
+            <div class="contacts">
+                <p>Email: Benedicttorrespascua@gmail.com</p>
+                <p>Phone: 09072328263</p>
+                <!-- LinkedIn logo removed -->
+            </div>
+        </div>
+
+        <div class="right-container">
+            <nav>
+                <ul>
+                    <li><button class="tablink" onclick="openTab(event, 'about')">About</button></li>
+                    <li><button class="tablink" onclick="openTab(event, 'resume')">Resume</button></li>
+                    <li><button class="tablink" onclick="openTab(event, 'portfolio')">Portfolio</button></li>
+                </ul>
+            </nav>
+
+            <section id="about" class="tabcontent">
+                <h2>About Me</h2>
+                <p>Fresh IT graduate eager to develop skills and contribute to innovative projects. Committed to learning and growth, with a keen interest in web design and development. Possesses a basic understanding of troubleshooting and problem-solving. Seeking an opportunity to leverage academic knowledge and gain hands-on experience in a dynamic and collaborative environment.</p>
+            </section>
+
+            <section id="resume" class="tabcontent">
+                <h2>Resume</h2>
+                <div class="resume-content">
+                    <section>
+                        <h3>Education</h3>
+                        <p><strong>Bachelor of Science in Information Technology, Cum Laude</strong><br>
+                        Baguio College of Technology<br>
+                        July 2024</p>
+                    </section>
+
+                    <section>
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Web Design: Basic HTML, CSS, JavaScript</li>
+                            <li>Programming Languages: Basic knowledge in Java, C#, Python</li>
+                            <li>Design Tools: Figma</li>
+                            <li>Development Tools: VSCode, Notepad++, Laravel, Eclipse, PyCharm</li>
+                            <li>Basic Troubleshooting</li>
+                            <li>Other Skills: Leadership, Problem-solving, Team collaboration</li>
+                        </ul>
+                    </section>
+					<div class="button-container">
+					   <a href="Resume.docx" class="download-resume" download>Download Resume/CV</a>
+					</div>
+
+                    
+                </div>
+            </section>
+
+            <section id="portfolio" class="tabcontent">
+                <h2>Portfolio</h2>
+                <div class="projects">
+                    <div class="project">
+                        <img src="lgrrc.png" alt="LGRRC Webpage">
+                        <h3>LGRRC Webpage</h3>
+                        <p>Developed a Local Government Resource Center webpage for information dissemination and resource sharing.</p>
+                    </div>
+                    <div class="project">
+                        <img src="lms.png" alt="LMS for LGU (CAPDEVPRO)">
+                        <h3>LMS for LGU (CAPDEVPRO)</h3>
+                        <p>Created a Learning Management System for local government units, facilitating training and capacity development programs.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
